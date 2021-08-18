@@ -20,7 +20,7 @@
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/teal_200"
+                android:background="@drawable/round"
                 android:text="Activity 1"
                 android:textSize="25sp" />
 
@@ -29,7 +29,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/ic_frame_4"
+                android:background="@drawable/ic_vector_1"
                 android:layout_alignBottom="@id/text"
                 />
 
@@ -37,10 +37,9 @@
                 android:id="@+id/foreground2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/ic_frame_4"
                 android:layout_alignBottom="@id/text"
-                />
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_vector_1" />
 
         </RelativeLayout>
 

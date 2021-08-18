@@ -6,9 +6,7 @@ import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.hrithik.animation.databinding.Activity1Binding
 
 class Activity1 : AppCompatActivity() {
@@ -33,18 +31,14 @@ class Activity1 : AppCompatActivity() {
                 t.duration = 1200
             }
             addListener(object : Animator.AnimatorListener {
-                override fun onAnimationStart(p0: Animator?) {
-                }
+                override fun onAnimationStart(p0: Animator?) {}
 
                 override fun onAnimationEnd(p0: Animator?) {
-                    Handler(Looper.getMainLooper()).postDelayed( { animatorSet.start() }, 1200)
-                }
+                    Handler(Looper.getMainLooper()).postDelayed({ animatorSet.start() }, 1800) }
 
-                override fun onAnimationCancel(p0: Animator?) {
-                }
+                override fun onAnimationCancel(p0: Animator?) {}
 
-                override fun onAnimationRepeat(p0: Animator?) {
-                }
+                override fun onAnimationRepeat(p0: Animator?) {}
             })
         }
 
@@ -52,8 +46,6 @@ class Activity1 : AppCompatActivity() {
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-
-
         animatorSet.start()
     }
 }
